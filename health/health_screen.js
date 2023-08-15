@@ -45,7 +45,7 @@ $('form').submit(function (e) {
       data.BMI = $('#BMI').val();
       data.proportion = proportion;
       console.log(data, 'data>>>');
-      fetch('https://smartcity.onrender.com/health/addhealth', {
+      fetch('https://nr-smartcity.onrender.com/health/addhealth', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -94,7 +94,7 @@ async function senddata() {
     userID: UID
   };
   console.log(data);
-  fetch('https://smartcity.onrender.com/health/addhealth', {
+  fetch('https://nr-smartcity.onrender.com/health/addhealth', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {

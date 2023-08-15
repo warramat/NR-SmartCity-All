@@ -102,7 +102,7 @@ function comment() {
         const urlParams = new URLSearchParams(window.location.search);
         const _id = urlParams.get('_id');
         let url =
-          'https://smartcity.onrender.com/appeal/addStar/Comment/' +
+          'https://nr-smartcity.onrender.com/appeal/addStar/Comment/' +
           _id;
         let myHeaders = new Headers();
         myHeaders.append('Content-Type', 'application/json');
@@ -127,13 +127,13 @@ function comment() {
 }
 
 window.onload = async () => {
-  const img_url = 'https://smartcity.onrender.com/userSmart/';
+  const img_url = 'https://nr-smartcity.onrender.com/userSmart/';
   const UID = await getUID();
   const urlParams = new URLSearchParams(window.location.search);
   const key = urlParams.get('key') || 0;
   const _id = urlParams.get('_id');
   let data = await fetch(
-    'https://smartcity.onrender.com/appeal/find/data?userID=' + UID
+    'https://nr-smartcity.onrender.com/appeal/find/data?userID=' + UID
   );
   data = await data.json();
   data = data.data;

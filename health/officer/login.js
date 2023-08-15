@@ -19,7 +19,7 @@ $('form').submit(async (e) => {
     redirect: 'follow'
   };
   const res = await fetch(
-    'https://smartcity.onrender.com/User-admin/login',
+    'https://nr-smartcity.onrender.com/User-admin/login',
     requestOptions
   );
   if (res.status === 201) {

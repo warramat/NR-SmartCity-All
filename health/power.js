@@ -182,7 +182,7 @@
         // data.sumMemory = sumMemory;
         // data.proportion = proportion;
         fetch(
-          "https://smartcity.onrender.com/lifesurvey/addlifesurvey",
+          "https://nr-smartcity.onrender.com/lifesurvey/addlifesurvey",
           {
             method: "POST",
             body: JSON.stringify(data),

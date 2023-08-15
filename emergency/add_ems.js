@@ -53,7 +53,7 @@ liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('topic');
     let data = await fetch(
-      'https://smartcity.onrender.com/apply/search?topic=emergency' +
+      'https://nr-smartcity.onrender.com/apply/search?topic=emergency' +
         myParam
     );
   
@@ -89,7 +89,7 @@ liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
           redirect: 'follow'
         };
         fetch(
-          'https://smartcity.onrender.com/appeal/addappeal',
+          'https://nr-smartcity.onrender.com/appeal/addappeal',
           requestOptions
         )
           .then(() => {

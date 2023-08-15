@@ -39,7 +39,7 @@ $(document).ready(async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('topic');
   let data = await fetch(
-    'https://smartcity.onrender.com/apply/search?topic=' + myParam
+    'https://nr-smartcity.onrender.com/apply/search?topic=' + myParam
   );
   data = await data.json();
   let html = '';
@@ -74,7 +74,7 @@ $('form').submit((e) => {
       };
       fetch(
         // 'https://smartcity-pakpoon.herokuapp.com/appeal/addappeal',
-        'https://smartcity.onrender.com/appeal/addappeal',
+        'https://nr-smartcity.onrender.com/appeal/addappeal',
         requestOptions
       )
         .then(() => {
@@ -181,7 +181,7 @@ $('#take_image').click(async () => {});
 //   const urlParams = new URLSearchParams(window.location.search);
 //   const myParam = urlParams.get('topic');
 //   let data = await fetch(
-//     'https://smartcity.onrender.com/apply/search?topic=' + myParam
+//     'https://nr-smartcity.onrender.com/apply/search?topic=' + myParam
 //   );
 //   data = await data.json();
 //   let html = '';
@@ -216,7 +216,7 @@ $('#take_image').click(async () => {});
 //       };
 //       fetch(
 //         // 'https://smartcity-pakpoon.herokuapp.com/appeal/addappeal',
-//         'https://smartcity.onrender.com/appeal/addappointment',
+//         'https://nr-smartcity.onrender.com/appeal/addappointment',
 //         requestOptions
 //       )
 //         .then(() => {

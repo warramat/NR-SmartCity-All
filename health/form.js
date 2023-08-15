@@ -217,7 +217,7 @@ $("#TWH01").submit(function (e) {
       // data.sumMemory = sumMemory;
       data.proportion = proportion;
       fetch(
-        "https://smartcity.onrender.com/employee/addeemployee",
+        "https://nr-smartcity.onrender.com/employee/addeemployee",
         {
           method: "POST",
           body: JSON.stringify(data),

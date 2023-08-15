@@ -25,7 +25,7 @@ async function getUID() {
 window.onload = async () => {
   const UID = await getUID();
   let data = await fetch(
-    'https://smartcity.onrender.com/appeal/find/data?userID=' + UID
+    'https://nr-smartcity.onrender.com/appeal/find/data?userID=' + UID
   );
   let html = '';
   data = await data.json();
@@ -40,7 +40,7 @@ window.onload = async () => {
           <div class="card-body">
           <div class="row">
           <div class="col-4">
-          <h2><img style="width:80px" src="https://smartcity.onrender.com/userSmart/${
+          <h2><img style="width:80px" src="https://nr-smartcity.onrender.com/userSmart/${
             item.img[0]
           }"/></h2>
         </div>
