@@ -1,15 +1,15 @@
-liff.init({ liffId: '1656902981-0g1VVnpN' }).then(async () => {
+liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const key = urlParams.get('key') || 0;
   const _id = urlParams.get('_id');
   if (!liff.isLoggedIn()) {
     liff.login({
-      redirectUri: `https://tapp-smartcity.netlify.app/compailn/check_details.html?key=${key}&_id=${_id}`
+      redirectUri: `https://nr-smartcity.onrender.com/compailn/check_details.html?key=${key}&_id=${_id}`
     });
   } else if (!(await checkUser(await getUID()))) {
     window.location = '../register.html';
   } else if (!(await getFriend())) {
-    window.location = 'https://line.me/R/ti/p/@172nwynm';
+    window.location = 'https://line.me/R/ti/p/@406svlcs';
   } else {
     document.getElementById('show').style.visibility = 'visible';
   }

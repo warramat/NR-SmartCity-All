@@ -13,15 +13,15 @@ const M = [
   'ธันวาคม'
 ];
 
-liff.init({ liffId: '1656902981-0g1VVnpN' }).then(async () => {
+liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
   if (!liff.isLoggedIn()) {
     liff.login({
-      redirectUri: 'https://tapp-smartcity.netlify.app/health/health_Edit.html'
+      redirectUri: 'https://nr-smartcity.onrender.com/health/health_Edit.html'
     });
   } else if (!(await checkUser(await getUID()))) {
     window.location = '../register.html';
   } else if (!(await getFriend())) {
-    window.location = 'https://line.me/R/ti/p/@172nwynm';
+    window.location = 'https://line.me/R/ti/p/@406svlcs';
   } else {
     document.getElementById('show').style.visibility = 'visible';
   }
