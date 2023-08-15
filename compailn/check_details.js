@@ -4,7 +4,7 @@ liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
   const _id = urlParams.get('_id');
   if (!liff.isLoggedIn()) {
     liff.login({
-      redirectUri: `https://nr-smartcity.onrender.com/compailn/check_details.html?key=${key}&_id=${_id}`
+      redirectUri: `https://nr-smartcity-all.netlify.app/compailn/check_details.html?key=${key}&_id=${_id}`
     });
   } else if (!(await checkUser(await getUID()))) {
     window.location = '../register.html';

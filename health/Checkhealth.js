@@ -4,7 +4,7 @@ liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
   if (!liff.isLoggedIn()) {
     liff.login({
       redirectUri:
-        'https://nr-smartcity.onrender.com/health/Checkhealth.html?_id=' +
+        'https://nr-smartcity-all.netlify.app/health/Checkhealth.html?_id=' +
         myParam
     });
   } else if (!(await checkUser(await getUID()))) {
