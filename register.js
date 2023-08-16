@@ -25,6 +25,7 @@ async function getUID() {
 
 
 function makeList(id, data, clear = true) {
+  console.log(data);
   let html = '';
   if (clear) {
     $('#' + id).html('');
