@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
@@ -29,52 +29,67 @@
         .text-manu {
             color: black;
         }
-
         .p {
             font-size: 15pt;
         }
     </style>
-    <title>สุขภาพ</title>
+    <title>ชำระค่าบริการต่างๆ</title>
 </head>
 
 <body>
-    <div id="show" style="visibility: hidden;">
+    <div id="show" >
         <div class="card min-vh-100">
             <div class="card-body min-vh-90">
                 <div class="d-flex align-items-center" style="margin-top: 2rem; flex-direction: column;">
-                    <img src="../img/logoNR.png" width="100" height="100" />
-                </br>
-                <h3>เทศกาล</h3>
-                    <h4>ล่องเรือ กินปู ดูหิ่งห้อย ประจำปี 2566</h4>
+                    <img src="../img/logoNR.png" width="100" height="100" /><br>
+                    <h4>ชำระค่าบริการต่างๆ</h4>
                 </div>
 
                 <div class="card-body min-vh-100">
                     <div class="min-vh-100 d-flex align-items-center " style="flex-direction:column;">
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuAViHbGh8ZES7YrcXbE_J6P3FKXxZMldqlcXoYE4wfe9AGw/viewform">
+                        <a href="#">
                             <div class="card" style="width: 20rem">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-8 text-manu">
-                                            <p class="card-title p">โปรแกรมลงทะเบียน</p>
+                                            <p class="card-title p">จ่ายค่าน้ำประปา</p>
 
                                         </div>
                                         <div class="col-4">
-                                            <img src="../img/festival1.png" width="70" height="70" />
+                                            <img src="../img/prapa1.png" width="70" height="70" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="https://script.google.com/macros/s/AKfycbxKNYCzGk4TuRARqZumqsoLRfLTCQ5X64K-WyxL-wUQSDY8_-izt4jgEaYAgqK43kZS/exec">
+
+                        <a href="#">
                             <div class="card" style="width: 20rem">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-8 text-manu">
-                                            <p class="card-title p">โปรแกรมค้นหาหมายเลข</p>
+                                            <p class="card-title p">จ่ายค่าธรรมเนียมขยะ</p>
+
                                         </div>
                                         <div class="col-4">
-                                            <img src="../img/festival2.png" width="70" height="70" />
+                                            <img src="../img/bin1.png" width="70" height="70" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="card" style="width: 20rem">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8 text-manu">
+                                            <p class="card-title p">จ่ายภาษี</p>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="../img/tax1.jpg" width="70" height="70" />
                                         </div>
                                     </div>
                                 </div>
@@ -82,10 +97,14 @@
                         </a>
                     </div>
                 </div>
-                
             </div>
-            <script src="../main.js"></script>
 </body>
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script src="../checkUser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="./home.js"></script>
 <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
 <script>
     // VConsole will be exported to `window.VConsole` by default.
