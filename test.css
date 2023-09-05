@@ -1,0 +1,12 @@
+.bg-mynav {
+    background-color: rgb(79, 78, 78);
+}
+
+body {
+    font-size: 1.25rem;
+    background-color: aliceblue;
+}
+
+td {
+    line-height: 3rem;
+}
