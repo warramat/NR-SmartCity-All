@@ -47,7 +47,7 @@ $('form').submit(function (e) {
       });
     }
 
-    fetch('https://nr-smartcity.onrender.com/happy/addhappy', {
+    fetch('https://nr-api-smartcity-final.onrender.com/happy/addhappy', {
       method: 'PUT',
       body: JSON.stringify(sendData),
       headers: {

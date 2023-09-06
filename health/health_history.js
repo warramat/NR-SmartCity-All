@@ -40,7 +40,7 @@ function getcolor(BMI) {
 window.onload = async () => {
   const UID = await getUID();
   let data = await fetch(
-    'https://nr-smartcity.onrender.com/health/find/data?userID=' + UID
+    'https://nr-api-smartcity-final.onrender.com/health/find/data?userID=' + UID
   );
   let html = '';
   data = await data.json();

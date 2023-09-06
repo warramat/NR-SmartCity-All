@@ -1,6 +1,6 @@
 function loadTable() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://nr-smartcity.onrender.com/User-admin/adminAll");
+    xhttp.open("GET", "https://nr-api-smartcity-final.onrender.com/User-admin/adminAll");
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -47,7 +47,7 @@ function loadTable() {
     const password = document.getElementById("password").value;
       
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://nr-smartcity.onrender.com/User-admin/Cre-Admin");
+    xhttp.open("POST", "https://nr-api-smartcity-final.onrender.com/User-admin/Cre-Admin");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "name": name, "userid": userid, "password": password, 

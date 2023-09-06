@@ -121,7 +121,7 @@ $('form').submit((e) => {
         redirect: 'follow'
       };
       fetch(
-        'https://nr-smartcity.onrender.com/userSmart/Creuser',
+        'https://nr-api-smartcity-final.onrender.com/userSmart/Creuser',
         requestOptions
       ).then(() => {
         Swal.fire('บันทึกข้อมูลสำเร็จ', '', 'success')

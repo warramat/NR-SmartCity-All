@@ -182,7 +182,7 @@ $("#TWH01").submit(function (e) {
         // data.sumMemory = sumMemory;
         // data.proportion = proportion;
         fetch(
-          "https://nr-smartcity.onrender.com/lifesurvey/addlifesurvey",
+          "https://nr-api-smartcity-final.onrender.com/lifesurvey/addlifesurvey",
           {
             method: "POST",
             body: JSON.stringify(data),

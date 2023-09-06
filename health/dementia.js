@@ -45,7 +45,7 @@ $('form').submit(function (e) {
         sendData[e.name] = e.value;
       });
     }
-    fetch('https://nr-smartcity.onrender.com/dementia/adddementia', {
+    fetch('https://nr-api-smartcity-final.onrender.com/dementia/adddementia', {
       method: 'PUT',
       body: JSON.stringify(sendData),
       headers: {

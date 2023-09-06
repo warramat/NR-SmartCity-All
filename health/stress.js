@@ -45,7 +45,7 @@ $('form').submit(function (e) {
         sendData[e.name] = e.value;
       });
     }
-    fetch('https://nr-smartcity.onrender.com/stress/addstress', {
+    fetch('https://nr-api-smartcity-final.onrender.com/stress/addstress', {
       method: 'PUT',
       body: JSON.stringify(sendData),
       headers: {

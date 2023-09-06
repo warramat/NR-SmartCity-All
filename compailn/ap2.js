@@ -54,7 +54,7 @@ liff.init({ liffId: '2000414439-BvmeyznD' }).then(async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('topic');
     let data = await fetch(
-      'https://nr-smartcity.onrender.com/apply/search?topic=' + myParam
+      'https://nr-api-smartcity-final.onrender.com/apply/search?topic=' + myParam
     );
     data = await data.json();
     let html = '';

@@ -26,7 +26,7 @@ window.onload = async () => {
   const UID = await getUID();
   console.log(UID);
   let data = await fetch(
-    'https://nr-smartcity.onrender.com/protest/find/data/?userID=' +
+    'https://nr-api-smartcity-final.onrender.com/protest/find/data/?userID=' +
       UID
   );
   let html = '';
