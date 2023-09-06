@@ -88,7 +88,7 @@ $('form').submit((e) => {
         redirect: 'follow'
       };
       fetch(
-        'https://nr-smartcity.onrender.com/appeal/addappeal',
+        'https://nr-api-smartcity-final.onrender.com/appeal/addappeal',
         requestOptions
       )
         .then(() => {
