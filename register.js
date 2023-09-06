@@ -128,10 +128,10 @@ $('form').submit((e) => {
           .then(() => {
             console.log(liff.getOS());
             if (liff.getOS() === 'web') {
-              window.location = './index.html';
+              window.location = './health/health_Edit.html';
             } else {
               if(!liff.isInClient()){
-                window.location = './index.html';
+                window.location = './health/health_Edit.html';
               }else{
                 liff.closeWindow();
               }
