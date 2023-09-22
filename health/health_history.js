@@ -46,7 +46,6 @@ window.onload = async () => {
   data = await data.json();
   data = data.data;
   data = data.reverse();
-  console.log(">>>",data)
   data.forEach((item, key) => {
     html += `
         <div class="min-vw-100">
@@ -54,7 +53,7 @@ window.onload = async () => {
             <div class="card-body">
               <div class="row">
                 <div class="col-12 ">
-               📅 &nbsp${toThaidate(
+               📅 &nbsp${(
                  item.updated
                )} &nbsp &nbsp ⏰ &nbsp${getTime(item.updated)}น.</div>
               </div>
