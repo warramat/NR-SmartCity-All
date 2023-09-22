@@ -46,6 +46,7 @@ window.onload = async () => {
   data = await data.json();
   data = data.data;
   data = data.reverse();
+  console.log(">>>",data)
   data.forEach((item, key) => {
     html += `
         <div class="min-vw-100">
